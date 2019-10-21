@@ -40,4 +40,9 @@ public class MergeSort implements Sorter{
         return mergedArray;
     }
 
+    @Override
+    public String toString(){
+        return "Merge Sorter";
+    }
+
 }

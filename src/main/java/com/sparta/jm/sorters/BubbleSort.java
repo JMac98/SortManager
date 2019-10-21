@@ -1,10 +1,6 @@
 package com.sparta.jm.sorters;
 
-import com.sparta.jm.manager.App;
-
 public class BubbleSort implements Sorter{
-    // o(n^2)
-
     @Override
     public int[] getSortedArray(int[] unsortedArray){
         for(int j = 0; j < unsortedArray.length-1;j++){
@@ -20,7 +16,6 @@ public class BubbleSort implements Sorter{
 
     }
 
-    // const PI_NUMBER = 3.1697 /// == checks equiality between prmitave
 
     @Override
     public String toString(){
