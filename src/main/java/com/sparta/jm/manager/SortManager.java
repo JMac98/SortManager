@@ -7,18 +7,41 @@ import java.util.Random;
 
 public class SortManager {
 
-    public void sortArray(String sortType) {
-        int[] unsortedArray = createArray(10);
+    private DisplayManager displayManager = new DisplayManager();
+    private SortLoader loader = new SortLoader();
 
-        Sorter sorter = SortFactory.getInstance();
-        int[] sortedArray = sorter.getSortedArray(unsortedArray.clone());
+    public int[] arrayToSort = createArray(10);
 
-        displaySortedArray(unsortedArray, sortedArray, sorter.toString());
-    }
+//    public void sortArray() {
+//
+//        Sorter sorter = SortFactory.getInstance(); //get type of sorter from the properties file
+//        int[] sortedArray = sorter.getSortedArray(unsortedArray.clone());
+//
+//        displaySortedArray(unsortedArray, sortedArray, sorter.toString());
+//    }
 
-    public void displaySortedArray(int[] unsortedArray, int[] sortedArray, String sortType){ //helper method
-        DisplayManager displayManager = new DisplayManager();
-        displayManager.displaySortedArray(unsortedArray, sortedArray, sortType);
+//    public void displaySortedArray(int[] unsortedArray, int[] sortedArray, String sortType){ //helper method
+//        DisplayManager displayManager = new DisplayManager();
+//        displayManager.displaySortedArray(unsortedArray, sortedArray, sortType);
+//    }
+
+    public void sortArray(){
+        try{
+            String sortType = displayManager.displayTerminalSortTypeRequest(loader.getSortersLocation());
+
+            String arraySize = displayManager.displayTerminalArraySizeRequest();
+
+            arrayToSort = createArray(10);
+            long startTime = System.nanoTime();
+            displayManager.printBeforeSort(arrayToSort);
+            Sorter sorter = selectSorter(sortType);
+            int[] sortedArray = sorter.getSortedArray(arrayToSort.clone());
+            long endTime = System.nanoTime();
+            displayManager.printAfterSort(sortedArray, endTime - startTime);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private int[] createArray(int size){
@@ -29,9 +52,11 @@ public class SortManager {
         }
         return unsortedArray;
     }
+
+    private Sorter selectSorter(String sortType){
+        return loader.getSorter(sortType);
+    }
 }
-
-
 
 //        int[] numbers =
 //        MergeSort mergesort = new MergeSort();

@@ -1,15 +1,12 @@
 package com.sparta.jm.sorters;
 
-import java.util.Arrays;
-
 public class Quicksort implements Sorter {
-
     @Override
     public int[] getSortedArray(int[] array1) {
         return quickSort(array1,0,array1.length-1);
     }
 
-    private int[] quickSort(int[] array1, int low_index, int high_index) {
+    public int[] quickSort(int[] array1, int low_index, int high_index) {
         int i = low_index;
         int j = high_index;
         //choose middle element as pivot
@@ -46,10 +43,4 @@ public class Quicksort implements Sorter {
     public String toString(){
         return "Quick Sorter";
     }
-
 }
-
-
-
-// merge sort iteratively
-// split array into subarrays of size 1

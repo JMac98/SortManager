@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e28c5a44-4d5f-498b-a317-565afa36d2ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sort.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/display/DisplayManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/RandomNumberGenerator.java" afterDir="false" />
+    <list default="true" id="e28c5a44-4d5f-498b-a317-565afa36d2ba" name="Default Changelist" comment="Second commit">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/BinarySearchTree.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/logFile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/Logging.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/BinarySearchTreeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jm/PerformanceTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sort.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sort.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/display/DisplayManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/ArrayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/ArrayManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/BubbleSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/MergeSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/Quicksort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/Quicksort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/jm/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jm/SortTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,12 +53,17 @@
     </option>
   </component>
   <component name="ProjectId" id="1SKl38KSAQVCUQDcAXvSPY6cyos" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JDBC" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -72,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.jm.manager.App" />
       <module name="SortManager" />
@@ -86,9 +97,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PerformanceTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.jm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.jm" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.jm.PerformanceTester" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PerformanceTester.testBubbleSorter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.jm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.jm" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.jm.PerformanceTester" />
+      <option name="METHOD_NAME" value="testBubbleSorter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PerformanceTester.testMergeSorter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.jm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.jm" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.jm.PerformanceTester" />
+      <option name="METHOD_NAME" value="testMergeSorter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PerformanceTester.testQuickSorter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.jm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.jm" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.jm.PerformanceTester" />
+      <option name="METHOD_NAME" value="testQuickSorter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.PerformanceTester.testQuickSorter" />
+        <item itemvalue="JUnit.PerformanceTester.testBubbleSorter" />
+        <item itemvalue="JUnit.PerformanceTester.testMergeSorter" />
+        <item itemvalue="JUnit.PerformanceTester" />
       </list>
     </recent_temporary>
   </component>
@@ -103,6 +181,14 @@
       <option name="presentableId" value="Default" />
       <updated>1571319965400</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second commit">
+      <created>1571661804455</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571661804455</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,20 +204,17 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/MergeSort.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/App.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this" />
+        <watch expression="unsortedArray" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

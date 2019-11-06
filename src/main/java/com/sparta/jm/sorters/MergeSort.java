@@ -1,6 +1,6 @@
 package com.sparta.jm.sorters;
 
-import java.util.Arrays;
+import java.util.Arrays; //italic = static
 
 public class MergeSort implements Sorter{
     @Override
@@ -8,16 +8,15 @@ public class MergeSort implements Sorter{
         if(unsortedArray.length == 1) {
             return unsortedArray;
         }
-
-        int[] leftArray = Arrays.copyOfRange(unsortedArray,0,(unsortedArray.length/2));
-        int[] rightArray = Arrays.copyOfRange(unsortedArray,(unsortedArray.length/2),unsortedArray.length);
+        int midpoint = unsortedArray.length / 2;
+        int[] leftArray = Arrays.copyOfRange(unsortedArray,0,midpoint);
+        int[] rightArray = Arrays.copyOfRange(unsortedArray,midpoint,unsortedArray.length);
 
         int[] sortedArray = mergeArray(getSortedArray(leftArray),getSortedArray(rightArray));
         return sortedArray;
-
     }
 
-    public int[] mergeArray(int[] array1, int[] array2) {
+    private int[] mergeArray(int[] array1, int[] array2) {
         int[] mergedArray = new int[array1.length + array2.length];
         int i = 0, j = 0, k = 0;
 
@@ -29,7 +28,6 @@ public class MergeSort implements Sorter{
                 mergedArray[k++] = array2[j++];
             }
         }
-
         while (i < array1.length) {
             mergedArray[k++] = array1[i++];
         }
