@@ -3,7 +3,6 @@ package com.sparta.jm.manager;
 import com.sparta.jm.sorters.Sorter;
 
 public class SortLoader {
-//    private static final String FILE_PATH = "C:/Users/James Mac/IdeaProjects/SortManager/src/main/java/com/sparta/jm/sorters";
     private static final String SRC = "/src/main/java/";
     private String name;
 
