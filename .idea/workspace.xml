@@ -1,25 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e28c5a44-4d5f-498b-a317-565afa36d2ba" name="Default Changelist" comment="Second commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/BinarySearchTree.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/logFile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/Logging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/BinarySearchTreeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jm/PerformanceTester.java" afterDir="false" />
+    <list default="true" id="e28c5a44-4d5f-498b-a317-565afa36d2ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sort.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sort.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/display/DisplayManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/Quicksort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/sorters/Quicksort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/jm/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/jm/SortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/jm/manager/SortLoader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571661804455</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Complete project commit">
+      <created>1573031378658</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573031378658</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +198,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="Complete project commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete project commit" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
