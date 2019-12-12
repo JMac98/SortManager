@@ -13,7 +13,7 @@ Java application which contains various sorting algorithms.
 ### Prerequisites
 
 ```
-You'll need to create a Jar file from this binary search tree project: https://github.com/JMac98/BinarySearchTree
+You'll need to create a JAR file from the following binary search tree project: https://github.com/JMac98/BinarySearchTree
 
 and add this as a module dependancy for the project 
 
