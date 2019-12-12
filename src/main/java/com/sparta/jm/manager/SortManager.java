@@ -29,9 +29,9 @@ public class SortManager {
         try{
             String sortType = displayManager.displayTerminalSortTypeRequest(loader.getSortersLocation());
 
-            String arraySize = displayManager.displayTerminalArraySizeRequest();
+            int arraySize = displayManager.displayTerminalArraySizeRequest();
 
-            arrayToSort = createArray(10);
+            arrayToSort = createArray(arraySize);
             long startTime = System.nanoTime();
             displayManager.printBeforeSort(arrayToSort);
             Sorter sorter = selectSorter(sortType);

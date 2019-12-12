@@ -25,6 +25,3 @@ public class App
     }
 
 }
-
-//        new SortManager().sortArray("bubble");
-//        new SortManager().sortArray("merge");

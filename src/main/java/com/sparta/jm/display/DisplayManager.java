@@ -7,13 +7,6 @@ import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class DisplayManager {
-
-//    public void displaySortedArray(int[] unsortedArray, int[] sortedArray, String sortType){
-//        System.out.println("Unsorted array: " + Arrays.toString(unsortedArray));
-//        System.out.println("Sorted array using: " + sortType);
-//        System.out.println("Sorted array: " + Arrays.toString(sortedArray));
-//    }
-
     private Scanner scanner = new Scanner(System.in);
 
     public String displayTerminalSortTypeRequest(String path){
@@ -23,9 +16,9 @@ public class DisplayManager {
         return sortNames[sortType-1];
     }
 
-    public String displayTerminalArraySizeRequest(){
+    public int displayTerminalArraySizeRequest(){
         System.out.println("Please enter the size of the array");
-        return scanner.nextLine();
+        return scanner.nextInt();
     }
 
     public void printBeforeSort(int[] arrayToSort){
@@ -40,22 +33,6 @@ public class DisplayManager {
     public String displayUnsortedArray(){
         return "hello";
     }
-
-
-//    private String[] getMenuItems(String path){
-//        File sortDirectory = new File(path);
-//        String[] names = sortDirectory.list();
-//        Arrays.sort(names != null ? names : new String[0]); // safeguard
-//        int index = 1;
-//        for(String name : names){
-//            if(!name.equals("Sorter.java")){
-//                name = name.substring(0,name.indexOf('.'));
-//                System.out.println(index + ". " + name);
-//                index++;
-//            }
-//        }
-//        return names;
-//    }
 
     private String[] getMenuItems(String path){
         AtomicInteger index = new AtomicInteger(1);
