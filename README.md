@@ -12,9 +12,11 @@ Java application which contains various sorting algorithms.
 
 ### Prerequisites
 
-```
-You'll need to create a JAR file from the following binary search tree project: https://github.com/JMac98/BinarySearchTree
+This project implements the binary search tree as an external JAR file created from this project: https://github.com/JMac98/BinarySearchTree
 
-and add this as a module dependancy for this project 
+You'll need to add this external JAR file to the project in order for it to successfully run.
 
-```
+IntelliJ instructions : https://stackoverflow.com/questions/1051640/correct-way-to-add-external-jars-lib-jar-to-an-intellij-idea-project
+
+
+
