@@ -1,4 +1,4 @@
-# SortManager
+# sort-manager
 
 Java application which contains various sorting algorithms.
 
